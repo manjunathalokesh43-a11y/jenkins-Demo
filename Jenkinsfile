@@ -1,12 +1,12 @@
 pipeline {
-
     agent any
 
     stages {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/manjunathalokesh43-a11y/jenkins-Demo.git'
+                git branch: 'main',
+                url: 'https://github.com/manjunathalokesh43-a11y/jenkins-Demo.git'
             }
         }
 
